@@ -1,0 +1,118 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: center;
+}
+    
+.card
+{
+    display: flex;
+    flex-direction: column;
+	width: 33%;
+}
+
+.cta
+{
+    align-self: center;
+}
+    
+    
+    
+/* other styles */
+.card
+{
+    padding: 30px 50px;
+    color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+	background: rgb(0,174,239);
+	background: linear-gradient(135deg, rgba(0,174,239,1) 20%, rgba(45,56,138,1) 100%);
+	align-items: center;
+}
+
+.card > * {
+	margin: 20px 0;
+}
+
+h1
+{
+	margin: 0 20px;
+	font-size: 3rem;
+	font-weight: lighter;
+	text-align: center;
+}
+
+p
+{
+	font-size: 1.5rem;
+	flex-grow: 1;
+}
+
+button
+{
+	width: 240px;
+	height: 50px;
+	border-radius: 25px;
+	border: 2px solid #fff;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	background: transparent;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+button:hover
+{
+	background: #ffffff;
+	color: #000;
+}
+button:hover::after
+{
+	right: 10px;
+}
+
+button::after
+{
+	content: "+1";
+	font-family: "Jua";
+	position: absolute;
+	right: 15px;
+	transition: right 1s ease;
+}
+
+button, button:hover
+{
+    transition: all 0.3s ease;
+	outline: none;
+}
+
+a
+{
+	color: #fff;
+	margin: 0 10px;
+}
+a:hover
+{
+	text-decoration: none;
+}
